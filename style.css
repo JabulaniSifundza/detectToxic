@@ -1,0 +1,108 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #c60c0c;
+    --complimentary-color: #000000;
+}
+
+h1{
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+h2{
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 22.25px;
+	font-weight: 400;
+}
+
+p{
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 13.75px;
+	font-weight: 400;
+}
+
+header{
+	margin-top: -10px;
+	width: 100vw;
+	height: 120px;
+	display: flex;
+	flex-direction: row;
+	background-color: var(--complimentary-color);
+}
+
+.headerImg{
+	width: 180px;
+	height: 100px;
+	align-self: center;
+
+}
+
+.imgCont{
+	display: flex;
+	justify-content: center;
+}
+
+.toxic{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 300px;
+}
+
+.headerText{
+	align-self: center;
+	margin-right: 300px;
+	color: var(--primary-color);
+}
+
+.detectCont{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	flex-direction: column;
+
+}
+
+.makeDetection{
+	height: 60px;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	background-color: var(--secondary-color);
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 28.25px;
+	font-weight: 400;
+	color: var(--primary-color);
+	border: none;
+	cursor: pointer;
+}
+
+.instructions{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+input[type=text]{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: 80px;
+}

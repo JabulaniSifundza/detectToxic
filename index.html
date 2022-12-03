@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+	<title>Toxic Text Detection</title>
+</head>
+<body>
+	<header>
+		<img src="LogoRed.png" alt="" class="headerImg">
+		<h1 class="headerText">Toxicity Detector</h1>
+	</header>
+
+	<div class="imgCont">
+		<img src="toxicityIcon.png" alt="" class="toxic">
+	</div>
+
+	<div class="instructions">
+		<h2>Enter toxic/offensive/explicit/profane text to make detection</h2>
+		<p>The model will create an alert depending on whether the text is toxic or not</p>
+	</div>
+
+	<div class="detectCont">
+		<input type="text" id="sentence">
+		<button id="detect" class="makeDetection">Detect</button>
+	</div>
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+	<script src="index.js"></script>
+</body>
+</html>
